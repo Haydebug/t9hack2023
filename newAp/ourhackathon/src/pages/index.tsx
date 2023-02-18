@@ -1,9 +1,31 @@
 import Link from 'next/link'
-import 'bootstrap/dist/css/bootstrap.css'
+import useFetch from '@/hooks/useFetch'
+
+interface response {
+  userId: number
+  id: number
+  title: string
+  body: string
+}
 
 function Home() {
+
+  let name = "hayden"
+  
+  const {data, error} = useFetch<any>("/api/usernameExists?username=hayden")
+  console.log(data)
+
+  const {data : data2, error : error2} = useFetch<any>("/api/getMessages?username=hayden&queryStart=0&queryEnd=3")
+  console.log(data2)
+
+  const {data : data3, error : error3} = useFetch<any>("/api/emailExists?email=hayden")
+  console.log(data3)
+
+  const {data : data4, error : error4} = useFetch<any>("/api/makeUser?username=haydebug&password=gamer12&email=haydedev@gmail.com")
+  console.log(data4)
+
   return (
-    <div>
+    <div className='homeBody'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossOrigin="anonymous"></link>
 

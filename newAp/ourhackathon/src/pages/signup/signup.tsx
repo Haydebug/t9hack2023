@@ -2,11 +2,17 @@ import Link from 'next/link'
 
 function Home() {
   return (
-    <ul>
+    <div>
       <li>
         <Link href="/">Home from sign up</Link>
       </li>
-    </ul>
+
+      <form>
+        {/* <label class = "username">username</label> */}
+      </form>
+    
+
+    </div>
   )
 }
 
