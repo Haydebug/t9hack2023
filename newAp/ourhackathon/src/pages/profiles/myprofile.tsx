@@ -4,7 +4,7 @@ function Home() {
   return (
     <ul>
       <li>
-        <Link href="/">Home from profile page</Link>
+        <Link href="/">Your planet</Link>
       </li>
     </ul>
   )
