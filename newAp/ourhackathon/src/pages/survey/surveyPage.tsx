@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import style from '@/styles/Survey.module.css';
 import { NavBar } from '@/component/navbar';
 import { useRouter } from 'next/router';
-export const globalScore = 0;
 
 function Home() {
   const [score1, setScore1] = useState(0)
@@ -101,7 +100,7 @@ function Home() {
       <h2>
         &nbsp;&nbsp;&nbsp;&nbsp; 7. What subject would you most likely study?
       </h2>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore((score7) => 2)}> Arts </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore7((score7) => 2)}> Arts </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore7((score7) => 1)}> STEM </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore7((score7) => 4)}> Language </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore7((score7) => 3)}> Humanities </button>
@@ -110,7 +109,7 @@ function Home() {
       <h2>
         &nbsp;&nbsp;&nbsp;&nbsp; 8. How old are you?
       </h2>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore((score8) => 4)}> 18 - 25 </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore8((score8) => 4)}> 18 - 25 </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore8((score8) => 3)}> 26 - 35 </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore8((score8) => 2)}> 36 - 50 </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore8((score8) => 1)}> 50+ </button>
