@@ -10,7 +10,7 @@ function Home() {
         <Link href="/signin">Sign In</Link>
       </li>
       <li>
-        <Link href="/foo/index">Blog Post</Link>
+        <Link href="/survey/surveyPage">Survey</Link>
       </li>
     </ul>
   )
