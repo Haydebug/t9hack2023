@@ -3,6 +3,7 @@ import {useState} from 'react';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import style from '@/styles/Survey.module.css';
+import { NavBar } from '@/component/navbar';
 
 function Home() 
 {
@@ -17,7 +18,12 @@ function Home()
 
       <br>
       </br>
+      <br>
+      </br>
+      <br>
+      </br>
       <div className={style.myContainer}>
+      <NavBar />
       <h1 className='container-fluid m-2'>
         <center>
           Introduction Survey
@@ -122,6 +128,8 @@ function Home()
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className = "bg-dark rounded" onClick={() => setScore((score) => score + 3)}> Learn From Others </button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className = "bg-dark rounded" onClick={() => setScore((score) => score + 1)}> Discuss Issues </button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className = "bg-dark rounded" onClick={() => setScore((score) => score + 2)}> Have Fun </button>
+
+
     </ul>
   )
 }
