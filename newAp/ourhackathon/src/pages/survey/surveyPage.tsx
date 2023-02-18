@@ -142,6 +142,10 @@ function Home() {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScore11((score11) => 2)}> Have Fun </button>
       <br></br>
       <br></br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => setScoreFinal((scoreFinal) => (score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10 + score11) / 11)}> Dev: Generate Number </button>
+      <p>
+        Dev: {scoreFinal}
+      </p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="bg-dark rounded" onClick={() => {
         setScoreFinal((scoreFinal) => {
           (score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10 + score11) / 11;
