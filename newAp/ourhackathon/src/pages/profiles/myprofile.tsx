@@ -4,7 +4,7 @@ function Home() {
   return (
     <ul>
       <li>
-        <Link href="/">Home from survey page</Link>
+        <Link href="/">Home from profile page</Link>
       </li>
     </ul>
   )
