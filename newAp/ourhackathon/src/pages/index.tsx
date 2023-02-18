@@ -4,6 +4,8 @@ import {Byte} from "@/component/byte";
 import {NavBar} from "@/component/navbar";
 import React from "react";
 
+
+
 function Home() {
     const dummyData = [
         {title:"Title", body:"Hello", user:"Shrek", img:"https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000"},
