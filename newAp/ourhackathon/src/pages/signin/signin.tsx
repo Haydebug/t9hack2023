@@ -8,8 +8,12 @@ function Home() {
 
           <div className="container text-black mt-5">
               <div>
+                <br>
+                </br>
                   <h1>Login</h1>
                   <form action="/register" method="POST">
+                    <br>
+                    </br>
                       <div className="mb-3">
                           <label htmlFor="InputUsername" className="form-label">Username</label>
                           <input type="Username" className="form-control" name="username" id="username"

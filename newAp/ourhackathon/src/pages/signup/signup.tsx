@@ -9,15 +9,24 @@ function Home() {
 
           <div className="container text-black mt-5">
               <div>
+                <br>
+                </br>
                   <h1>Register</h1>
                   <form action="/register" method="POST">
+                    <br>
+                    </br>
                       <div className="mb-3">
-                          <label htmlFor="InputUsername" className="form-label">Username</label>
+                          <label htmlFor="InputUsername" className="form-label">Create Username</label>
                           <input type="Username" className="form-control" name="username" id="username"
                                  aria-describedby="usernameHelp" required/>
                       </div>
                       <div className="mb-3">
-                          <label htmlFor="InputPassword" className="form-label">Password</label>
+                          <label htmlFor="InputPassword" className="form-label">Create Password</label>
+                          <input type="password" className="form-control" name="password" id="password"
+                                 aria-describedby="passwordHelp" required/>
+                      </div>
+                      <div className="mb-3">
+                          <label htmlFor="ReInputPassword" className="form-label">Reenter Password</label>
                           <input type="password" className="form-control" name="password" id="password"
                                  aria-describedby="passwordHelp" required/>
                       </div>
